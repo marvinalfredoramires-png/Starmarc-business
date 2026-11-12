@@ -1,0 +1,23 @@
+body{
+  background:#0A1128;
+  color:white;
+  font-family:Arial;
+  padding:20px;
+  margin:0
+}
+input{
+  width:100%;padding:12px;margin:8px 0;
+  border-radius:10px;border:none;
+  background:#1A2B4A;color:white;
+  font-size:16px;box-sizing:border-box
+}
+button{
+  width:100%;padding:15px;border:none;
+  border-radius:12px;background:#3B82F6;
+  color:white;font-size:18px;font-weight:bold;margin-top:10px
+}
+.btn2{background:white;color:#0A1128}
+.card{background:#131E3A;padding:15px;border-radius:15px;margin-top:15px}
+.total{font-size:26px;color:#3B82F6;font-weight:bold;text-align:right}
+.oculto{display:none}
+.beneficio{background:#131E3A;padding:12px;border-radius:12px;margin:8px 0}
