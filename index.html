@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Starmarc Business</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="p1">
+<h1>⭐ Starmarc Business</h1>
+<h2>Bienvenido a tu negocio</h2>
+<div class="beneficio">⚡ Factura en 30 segundos</div>
+<div class="beneficio">🧮 IVA calculado solo</div>
+<div class="beneficio">🖨️ Imprimir y compartir por WhatsApp</div>
+<div class="beneficio">☁️ Todo guardado en la nube</div>
+<div class="beneficio">📋 Sabes quién te debe</div>
+<button class="btn2" onclick="ir('p2')">Entrar con Google</button>
+<button onclick="ir('p2')">Entrar con correo</button>
+</div>
+
+<div id="p2" class="oculto">
+<h2>Crear Factura</h2>
+<div class="card">
+Cliente:<input id="cliente" placeholder="Ej: Café Río">
+Producto:<input id="producto" placeholder="Ej: Pupusa revuelta">
+Cantidad:<input id="cant" type="number" value="1" oninput="calcular()">
+Precio $:<input id="precio" type="number" value="0" oninput="calcular()">
+<p>Subtotal: $<span id="sub">0.00</span></p>
+<p>IVA 13%: $<span id="iva">0.00</span></p>
+<p class="total">Total: $<span id="total">0.00</span></p>
+<button onclick="calcular()">Calcular</button>
+<button onclick="window.print()">🖨️ Imprimir / Guardar PDF</button>
+<button onclick="compartir()">📲 Compartir por WhatsApp</button>
+<button style="background:#1A2B4A" onclick="ir('p1')">⬅ Volver</button>
+</div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
